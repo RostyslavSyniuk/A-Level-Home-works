@@ -1,0 +1,44 @@
+blockquote {
+  color: green;
+}
+/* звернення до селекторів 'а', значення атрибуту 'href' яких починається з 'https' */
+.list a[href^="https"] {
+  color: red;
+}
+/* звернення до останнього ПРЯМОГО нащадка селектора .list */
+.list > li:last-child a{
+  background-color: green;
+}
+/* звернення до селектора, який слідує за 'ul' */
+.holder ul + p {
+  font-size: 26px;
+}
+.text-box > h3:first-child {
+  color: pink;
+}
+#greycol {
+  color: grey;
+}
+.text-box > p:first-child {
+  color: red;
+}
+.text-box h3 + p:nth-child(odd) {
+  color: green;
+}
+.yellow {
+  color: yellow;
+}
+.bg-box {
+  width: 1024px;
+  height: 612px;
+  background: url(https://img2.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg)
+      50% / auto no-repeat border-box,
+    url(https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png)
+      bottom / 205px 163px repeat-x,
+    url(https://www.freeiconspng.com/uploads/lamp-png-0.png) top / 41px 70px
+      repeat-x,
+    url(../img/58eb07b830eab15b56162788.png) right / 35px repeat-y,
+    url(https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru)
+      left/25px repeat-y;
+  background-color: green;
+}

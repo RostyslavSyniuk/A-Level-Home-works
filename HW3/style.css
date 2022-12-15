@@ -1,0 +1,28 @@
+main {
+  margin: 15px 50px;
+}
+.green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 220px;
+  padding: 15px 10px 20px;
+  margin-bottom: 30px;
+  border: 2px dashed red;
+  background: green;
+}
+.example-block {
+  width: 550px;
+  text-align: justify;
+}
+.first-img {
+  float: left;
+  width: 200px;
+  margin: 0px 15px 15px 0;
+}
+img[src="img/hw-6.2.2.png"] {
+  width: 140px;
+  float: right;
+  margin: 15px 0 15px 15px;
+}

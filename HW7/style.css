@@ -1,0 +1,94 @@
+/* 1 Task */
+.user-data {
+  width: 600px;
+  font-size: 1.5rem;
+}
+.user-data-set {
+  width: inherit;
+  background-color: rgb(252, 234, 211);
+  transition: 0.5s;
+}
+.user-data-set:hover {
+  box-shadow: 4px 4px 10px grey;
+  background-color: rgb(255, 214, 160);
+}
+.text-input {
+  margin-left: 100px;
+}
+.email-input {
+  margin-left: 87px;
+}
+.tel-input {
+  margin-left: 60px;
+}
+.user-data-button {
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  background-color: white;
+  border: 1px solid;
+}
+textarea {
+  width: inherit;
+  resize: none;
+  height: 150px;
+}
+.custom {
+  font-size: 2rem;
+}
+.custom span {
+  position: relative;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.custom span {
+  margin-left: 35px;
+}
+.custom span::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: -27px;
+  width: 17px;
+  height: 17px;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 3px;
+  transition: 1s;
+}
+.custom span::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  right: -27px;
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px grey;
+  background-image: url(../img/checkmark_111061.svg),
+    linear-gradient(0deg, rgba(42, 171, 29, 1) 0%, rgba(45, 253, 97, 1) 100%);
+  opacity: 0;
+}
+.custom:hover span::before {
+  background-color: rgb(124, 231, 120);
+}
+.custom-checkbox:checked + span::after {
+  opacity: 1;
+  transition: 0.5s;
+}
+.user-data-button {
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(240, 167, 77);
+  background-color: white;
+  border: none;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.user-data-button:hover {
+  color: white;
+  background-color: rgb(240, 167, 77);
+  border: 1px solid rgb(240, 167, 77);
+}

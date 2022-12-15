@@ -1,0 +1,5 @@
+input[type="checkbox"] {
+  border: 1px solid #f00;
+  background: #f00;
+  border-radius: 5;
+}
