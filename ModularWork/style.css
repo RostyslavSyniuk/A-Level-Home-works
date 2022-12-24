@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "FREESCPT";
+  src: url("fonts/FREESCPT.eot");
+  src: url("fonts/FREESCPT.eot") format("embedded-opentype"),
+    url("fonts/FREESCPT.woff2") format("woff2"),
+    url("fonts/FREESCPT.woff") format("woff"),
+    url("fonts/FREESCPT.ttf") format("truetype"),
+    url("fonts/FREESCPT.svg#FREESCPT") format("svg");
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot");
+  src: url("fonts/icomoon.eot") format("embedded-opentype"),
+    url("fonts/icomoon.ttf") format("truetype"),
+    url("fonts/icomoon.woff") format("woff"),
+    url("fonts/icomoon.svg") format("svg");
+}
+body {
+  font-family: icomoon;
+  color: #555;
+}
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+.content-contain {
+  max-width: 1170px;
+  margin: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 1rem 0;
+  align-items: center;
+}
+.header-nav ul {
+  display: flex;
+}
+.header-nav ul li:not(:last-of-type) {
+  margin-right: 30px;
+}
+.header-nav a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.5s;
+  font-weight: bold;
+  position: relative;
+}
+.header-nav a:hover {
+  color: #6346e2;
+}
+.header-nav a::after {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 1px;
+  background-color: #2f06e4;
+  position: absolute;
+  left: 12%;
+  bottom: -2px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.header-nav a:hover::after {
+  opacity: 1;
+}
+.trial-class {
+  background-color: #5f5de2;
+  background-image: url(img/bg-01.jpg);
+  background-blend-mode: screen;
+}
+.trial-class__flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trial-class__form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  background-color: white;
+  margin: 100px 0 100px 0;
+  border-radius: 15px;
+}
+.trial-class__form h3 {
+  color: #6346e2;
+  font-weight: 600;
+  padding: 40px 38px;
+}
+.trial-class__form input[placeholder],
+.trial-class__form select[placeholder] {
+  width: 240px;
+  margin: 0 30px;
+  border: none;
+  background-color: rgb(234, 235, 234);
+  border-radius: 5px;
+  padding: 18px 10px;
+}
+.trial-class__form select {
+}
+.trial-class__form p + p {
+  margin-top: 17px;
+}
+.trial-class__form:last-child {
+}
+.trial-class__form button {
+  justify-content: center;
+  width: 50%;
+  color: white;
+  background-color: #6346e2;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 0;
+  margin: 10px 0 35px;
+}
+.trial-class__form:last-child {
+  display: flex;
+}
+.page-head h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 50px;
+}
+.page-head p {
+  color: white;
+}
+.yoga-feature {
+}
+.img-exercises {
+}
+.about-us {
+}
+.yoga-benefit {
+}
+.price {
+}
+.upper-footer {
+}
+.lower-footer {
+}
