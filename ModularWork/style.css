@@ -20,12 +20,14 @@
   --brand-color: #6346e2;
 }
 body {
+  min-width: 320px;
   font-family: icomoon;
   color: #555;
 }
 .container {
   max-width: 1400px;
   margin: auto;
+  min-width: 320px;
 }
 .content-contain {
   max-width: 1170px;
@@ -37,11 +39,18 @@ header {
   padding: 1rem 0 1rem 0;
   align-items: center;
 }
+#menu__toggle {
+  position: relative;
+  top: -10px;
+  opacity: 0;
+  width: 26px;
+  height: 22px;
+}
 .header-nav ul {
   display: flex;
 }
 .header-nav ul li:not(:last-of-type) {
-  margin-right: 30px;
+  margin-right: 2rem;
 }
 .header-nav a {
   text-decoration: none;
@@ -87,7 +96,7 @@ header {
   flex-direction: column;
   font-size: 1.5rem;
   background-color: white;
-  margin: 100px 0 100px 0;
+  margin: 100px 0;
   border-radius: 15px;
   box-shadow: 3px 5px 20px rgb(22, 23, 34);
 }
@@ -97,17 +106,17 @@ header {
   padding: 40px 38px;
 }
 .trial-class__form input[placeholder],
-.trial-class__form select[placeholder] {
-  width: 240px;
-  margin: 0 30px;
+.trial-class__form select {
+  width: 15rem;
+  margin: 0 1.9rem;
   border: none;
   background-color: rgb(234, 235, 234);
   border-radius: 5px;
-  padding: 18px 10px;
+  padding: 1.1rem 10px;
   box-sizing: border-box;
 }
 .trial-class__form p + p {
-  margin-top: 17px;
+  margin-top: 1rem;
 }
 .trial-class__form button {
   justify-content: center;
@@ -128,9 +137,6 @@ header {
   color: var(--brand-color);
   border: 1px solid var(--brand-color);
 }
-.trial-class__form:last-child {
-  display: flex;
-}
 .page-head {
   padding: 0 55px 0 90px;
 }
@@ -143,7 +149,7 @@ header {
   padding-bottom: 35px;
 }
 .page-head p {
-  font-family: Freestyle script;
+  font-family: FREESCPT;
   font-size: 2.5rem;
   color: white;
 }
@@ -159,7 +165,7 @@ header {
   font-size: 2rem;
 }
 .yoga-feature__head p {
-  font-family: Freestyle script;
+  font-family: FREESCPT;
   font-size: 3rem;
   padding: 35px 0 76px 0;
   color: rgba(85, 85, 85, 0.87);
@@ -184,8 +190,10 @@ header {
   overflow: hidden;
 }
 .card-description {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  padding: 50px 30px 0 30px;
+  padding: 50px 30px 0;
 }
 .card-description h4 {
   text-transform: uppercase;
@@ -195,19 +203,12 @@ header {
 }
 .card-description p:first-of-type {
   padding: 18px 0;
+  flex-grow: 1;
 }
 .card-description p:last-of-type {
-  position: absolute;
-  bottom: 35px;
+  padding-bottom: 15px;
   opacity: 0.6;
   transition: 0.7s;
-}
-.card-description p:last-of-type:hover {
-  padding: 5px;
-  color: white;
-  background-color: var(--brand-color);
-  border: 1px solid rgb(94, 212, 94);
-  border-radius: 5px;
 }
 .img-exercises {
   display: flex;
@@ -245,6 +246,9 @@ header {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.icon-search {
+  margin-bottom: 0;
 }
 .img-exercises a::before,
 .img-exercises a::after {
@@ -300,12 +304,12 @@ header {
 .about-us__slider .slick-arrow.slick-prev {
   left: 0;
   border: none;
-  background: url(../img/noun-arrow-63447.svg) 0 0 / 100% no-repeat;
+  background: url(img/noun-arrow-63447.svg) 0 0 / 100% no-repeat;
 }
 .about-us__slider .slick-arrow.slick-next {
   right: 0;
   border: none;
-  background: url(../img/noun-arrow-63453.svg) 0 0 / 100% no-repeat;
+  background: url(img/noun-arrow-63453.svg) 0 0 / 100% no-repeat;
 }
 .about-us__slider__item {
   text-align: center;
@@ -347,7 +351,7 @@ header {
   height: 70px;
   border: 2px solid white;
   border-radius: 50%;
-  transition: 1s cubic-bezier(1, 0.37, 0.44, 0.33);
+  transition: 0.6s cubic-bezier(1, 0.37, 0.44, 0.33);
 }
 .yoga-benefit__img-wrap img {
   position: absolute;
@@ -358,27 +362,27 @@ header {
 .yoga-benefit__img-wrap:hover {
   background-color: rgb(15, 207, 15);
   border: 2px solid transparent;
+  box-shadow: 0 0 15px 5px rgb(30, 153, 235);
 }
 .yoga-benefit h3 {
   text-transform: uppercase;
   margin: 34px 0 25px 0;
 }
 .price {
-  background: url(img/bg-03.jpg) 179% 100% no-repeat;
+  background: url(img/bg-03.jpg) 180% 100% no-repeat;
 }
 .price > div {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 100px 0;
 }
 .price__card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   background-color: white;
-  max-width: calc(33.33% - 30px);
+  width: calc(33.33% - 30px);
   box-shadow: 1px 1px 15px rgb(68, 70, 87);
   border-radius: 10px;
   overflow: hidden;
@@ -386,9 +390,6 @@ header {
 }
 .price__card:hover {
   box-shadow: 1px 0px 15px 6px #70dae0;
-}
-.price .content-contain > div + div {
-  margin-left: 30px;
 }
 .price__card__upper {
   padding: 50px 72px 50px 110px;
@@ -454,13 +455,10 @@ footer {
 }
 .upper-footer__about {
   max-width: 50%;
-  padding-right: 30px;
 }
 .upper-footer__about p {
   padding-right: 70px;
   margin-bottom: 48px;
-}
-.upper-footer__socials {
 }
 .icon {
   display: inline-block;
@@ -470,6 +468,9 @@ footer {
   stroke: currentColor;
   fill: currentColor;
   margin-right: 10px;
+}
+.icon:hover {
+  color: #2f06e4;
 }
 .upper-footer__contact-us {
   max-width: 50%;
@@ -495,11 +496,16 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.upper-footer__contacts p, a{
+.upper-footer__contacts p,
+.upper-footer__contacts a {
   width: 50%;
   margin-bottom: 27px;
   text-decoration: none;
   color: white;
+}
+.upper-footer__contacts p > a {
+  display: flex;
+  margin-bottom: 0;
 }
 .lower-footer {
   display: flex;
@@ -510,4 +516,302 @@ footer {
 }
 .lower-footer p {
   opacity: 0.4;
+}
+@media screen and (max-width: 1200px) {
+  .content-contain {
+    width: 95vw;
+  }
+  .container {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .upper-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 0;
+  }
+  .upper-footer__socials {
+    margin-bottom: 30px;
+  }
+  .upper-footer__about {
+    max-width: 80%;
+  }
+  .upper-footer__contact-us {
+    max-width: 80%;
+  }
+  .content-contain {
+    width: 95vw;
+  }
+  .container {
+    width: 100vw;
+  }
+  .trial-class__flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+  }
+  .yoga-feature__classes li {
+    flex-direction: column;
+  }
+  .price__card {
+    align-items: center;
+    width: calc(50% - 60px);
+    margin: 30px;
+  }
+  .price > div {
+    justify-content: center;
+  }
+  .price__card__upper,
+  .price__card__upper p {
+    width: 100%;
+    justify-content: center;
+  }
+  .price__card__upper {
+    padding: 35px 72px;
+  }
+  .price__card__lower button {
+    color: white;
+    background-color: var(--brand-color);
+    border: 1px solid var(--brand-color);
+    border-radius: 15px;
+    padding: 15% 25%;
+    cursor: pointer;
+    box-shadow: 1px 1px 7px rgb(68, 70, 87);
+    transition: 0.7s;
+  }
+  .price {
+    background: url(img/bg-03.jpg) 50% 100% no-repeat;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+  }
+  .price__card {
+    width: calc(60% - 60px);
+  }
+  .price > div {
+    justify-content: center;
+  }
+  .price {
+    background: url(img/bg-03.jpg) 50% 100% no-repeat;
+  }
+  .wrapper {
+    position: relative;
+  }
+  .header {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    z-index: 100;
+  }
+  .header-logo {
+    padding: 0 1rem;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 46px;
+    width: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--brand-color);
+  }
+  .menu__btn > span {
+    right: 1rem;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    margin-top: 87px;
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    transition: 0.5s;
+  }
+  .header-nav li {
+    width: 100%;
+  }
+  .header-nav a {
+    display: block;
+    padding: 12px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ ul {
+    visibility: visible;
+    top: 0;
+    display: flex;
+    width: 100%;
+  }
+  #menu__toggle:checked ~ ul a {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-align: center;
+  }
+  #menu__toggle:checked ~ ul a::after {
+    width: 20%;
+    left: 40%;
+    bottom: 5px;
+  }
+  .header-nav li + li {
+    margin-top: 0.6rem;
+  }
+  .header-nav a {
+    font-size: 2rem;
+  }
+  .header-nav a:hover {
+    color: var(--brand-color);
+  }
+  .trial-class__flexbox {
+    flex-direction: column;
+    margin-left: 0;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .trial-class__form {
+    margin-top: 150px;
+  }
+  .yoga-feature__classes li {
+    flex-direction: column;
+  }
+  .img-exercises a {
+    width: 50%;
+  }
+  .about-us {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .about-us__description {
+    margin: 30px auto;
+  }
+  .about-us__slider .slick-arrow.slick-disabled {
+    opacity: 0.4;
+  }
+  .about-us__slider {
+    position: relative;
+  }
+  .about-us__slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -30px 0 0 0;
+    z-index: 10;
+    font-size: 0;
+    width: 45px;
+    height: 50px;
+  }
+  .about-us__slider .slick-arrow.slick-prev {
+    left: 0;
+    border: none;
+    background: url(../img/noun-arrow-63447.svg) 0 0 / 100% no-repeat;
+  }
+  .about-us__slider .slick-arrow.slick-next {
+    right: 0;
+    border: none;
+    background: url(../img/noun-arrow-63453.svg) 0 0 / 100% no-repeat;
+  }
+  .about-us__slider__item {
+    text-align: center;
+  }
+  .yoga-benefit li {
+    max-width: calc(50% - 35px);
+    padding: 30px 0 0 0;
+  }
+  .yoga-benefit li + li {
+    margin-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .yoga-feature__classes ul li {
+    width: 90vw;
+  }
+  .yoga-feature__classes ul {
+    justify-content: center;
+  }
+  .yoga-feature {
+    padding-bottom: 0;
+  }
+  .img-exercises {
+    padding-top: 30px;
+  }
+  .about-us {
+    padding: 15px 0;
+    text-align: left;
+  }
+  .about-us__description {
+    margin: 15px;
+    max-width: 100%;
+  }
+  .about-us__slider img {
+    width: 100%;
+  }
+  .yoga-benefit li {
+    max-width: 100%;
+  }
+  .price__card {
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+  }
+  .price__card__lower {
+    padding: 30px;
+  }
+  .price__card__lower button {
+    padding: 10px 25px;
+  }
+  .upper-footer {
+    padding: 30px 0;
+  }
+  .upper-footer__about h3 {
+    margin-bottom: 20px;
+  }
+  .upper-footer__about p {
+    padding-right: 0;
+  }
+  .upper-footer__contacts p,
+  .upper-footer__contacts a {
+    width: 100%;
+  }
 }
