@@ -2,10 +2,8 @@
 // let weight = '88.3';
 // let height = '1.75';
 
-// const bmi = weight / height**2
+// const bmi = Number(weight) / Number(height)**2
 // console.log(bmi); // 28.8
-
-
 
 //-----------------------------------
 
@@ -32,17 +30,16 @@
 // 450 покаже 07:30
 // 1441 покаже 24:01
 
-// const totalMinutes = 450;
+// const totalMinutes = 1441;
 // let minutes = totalMinutes % 60
-// let hours = Math.floor(totalMinutes/ 60) 
-// let formatted = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0');
+// let hours = Math.floor(totalMinutes/ 60)
+// let formatted = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
 
 // console.log(formatted)
 
-
 //-----------------------------------
 
-/* 
+/*
  * Вивести на екран модальне вікно prompt з повідомленням "Enter the number".
  * Результат виконання модального вікна записати в змінну, значення якої вивести в консоль.
  * */
@@ -52,32 +49,15 @@
 // console.log(result)
 //-----------------------------------
 
-/* 
-   * За допомогою модального вікна prompt отримати від користувача два числа.
-   * Вивести в консоль суму, різницю, добуток, поділ та залишок від поділу їх один на одного.
-   * */
+/*
+ * За допомогою модального вікна prompt отримати від користувача два числа.
+ * Вивести в консоль суму, різницю, добуток, поділ та залишок від поділу їх один на одного.
+ * */
 
-// let result1 = prompt();
-// let result2 = prompt();
-
-// console.log(Number(result1) + Number(result2))
-
-// let result1 = prompt();
-// let result2 = prompt();
-
-// console.log(Number(result1) - Number(result2))
-
-// let result1 = prompt();
-// let result2 = prompt();
-
-// console.log(Number(result1) * Number(result2))
-
-// let result1 = prompt();
-// let result2 = prompt();
-
-// console.log(Number(result1) / Number(result2))
-
-// let result1 = prompt();
-// let result2 = prompt();
-
-// console.log(Number(result1) % Number(result2))
+// const firstNumber = Number(prompt("Enter the first number"));
+// const secondNumber = Number(prompt("Enter your second number"));
+// console.log(firstNumber + secondNumber);
+// console.log(firstNumber - secondNumber);
+// console.log(firstNumber * secondNumber);
+// console.log(firstNumber / secondNumber);
+// console.log(firstNumber % secondNumber);
