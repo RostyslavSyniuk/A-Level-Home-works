@@ -1,7 +1,8 @@
 // 1) Створити цикл на 10 ітерацій. На кожній ітерації якщо i парне, то вивести в консоль слово Fiz, якщо i не парне, то вивести в консоль слово Buz, якщо i кротну цифру 3, то вивести FizBuz.
 
-// let i
+// 
 // for(i = 1; i <= 10; i++){
+    // let i
 //     if(i % 3 == 0){
 //         console.log(i, 'FizBuz');
 //     }else if(i % 2 == 0){
@@ -32,14 +33,12 @@
 //         console.log(`You enter wrong number`);
 //         return 0;
 //     }
-//     let floor = Math.ceil(appartment / 3);
-//     if(floor > 9){
-//         floor -= 9;
-//     }
-//     let porch = Math.ceil(appartment/27);
-//     console.log(`This appartment is on the ${floor} floor, in ${porch} porch`)
+//     let porch = Math.ceil(appartment / 27);
+//     let floor = Math.ceil((appartment - (porch-1) * 9 * 3) / 3);
+//     console.log(`This appartment is on the ${floor} floor, in ${porch}-d porch`)
 // }
-// appartmentCount(22)
+// appartmentCount(82)
+
 // 5) Вивести у консоль піраміду. Змінна вказує кількість рядків, з яких побудується піраміда. Піраміда повинна будуватися в однаковому візуальному вигляді між собою, але строго враховуючи кількість рядків
 // function myPyramid(rows)
 // {
