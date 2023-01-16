@@ -48,19 +48,31 @@
 // getDay('EN', 2);
 // 4) Створіть функцію, яка повертає суму двох найменших позитивних чисел із масиву мінімум 4 позитивних цілих чисел. Не передаються числа з плаваючою комою або непозитивні цілі числа.
 
-// const arrayOfNumbers = [1, 5, 5.5, 17, 22, -1, -2, 1.2, 3, 55, 4];
-// arrayOfNumbers.sort((a, b) => a - b);
-// let sum = arrayOfNumbers[0] + arrayOfNumbers[1] || 0;
-// function getArrayMinSum() {
-//   for (let i of arrayOfNumbers) {
-//     if (i <= 0 || !Number.isInteger([i])) {
-//       continue;
-//     } else {
-//       console.log(sum);
+// const arrayOfNumbers = [1, 5, 5.5, 17, 22, -1, -2, 1.2, 3, 55];
+
+// function getArrayMinSum(array) {
+//   let arr = [];
+//     while(arr.length < 2) {
+//         let temp = array[0];
+//         let index = 0;
+//         for(let i = 0; i < array.length; i++) {
+//             if(!Number.isInteger(array[i]) || array[i] < 1) {
+//                 continue;
+//             }
+//             if(array[i] < temp) {
+//                 temp = array[i];
+//                 index = i;
+//             }
+//         }
+//         arr.push(temp);
+//         array.splice(index,1);
 //     }
-//   }
+
+//     const add = arr => arr.reduce((a, b) => a + b, 0);
+//     let sum = add(arr);
+//     console.log(sum);
 // }
-// getArrayMinSum();
+// getArrayMinSum(arrayOfNumbers);
 
 // 5) Даний масив одиниць і нулів, перетворіть еквівалентне двійкове значення ціле число.
 // Наприклад: [0, 0, 0, 1] розглядається як 0001 двійкове уявлення 1.
