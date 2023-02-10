@@ -35,13 +35,13 @@
 
 // 3. Напишіть функцію squareDigits, яка приймає число та зводить у квадрат кожен символ.
 
-function squareDigits(num) {
-  let numbers = Array.from(num.toString());
-  let str = "";
-  for (let i = 0; i < numbers.length; i++) {
-    str += Math.pow(numbers[i], 2);
-  }
-  return Number(str);
+// function squareDigits(num) {
+//   let numbers = Array.from(num.toString());
+//   let str = "";
+//   for (let i = 0; i < numbers.length; i++) {
+//     str += Math.pow(numbers[i], 2);
+//   }
+//   return Number(str);
 }
     // console.log(squareDigits(91)); // 811
     // console.log(squareDigits(0)); // 0
