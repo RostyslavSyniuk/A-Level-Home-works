@@ -164,3 +164,4 @@
 // span.innerText = 'salut';
 // document.body.prepend(span)
 // console.log(span.children) //пара дочерних элементов - i и strong
+
