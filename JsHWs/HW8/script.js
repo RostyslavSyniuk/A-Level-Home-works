@@ -111,9 +111,9 @@ fetch("https://open.er-api.com/v6/latest/USD")
       document.body.append(btn);
       let entering;
       btn.onclick = () => {
-          entering = prompt("Enter current currrency");
+          return entering = prompt("Enter current currrency");
           };
-      let value = 36.7 * entering;
+      let value = 36.7 * +entering;
       btn.innerText = `${value}  uah`;
     }
     console.log(data); //изучите структуру, получаемую с сервера в консоли

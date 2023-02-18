@@ -1,7 +1,6 @@
 // Сделайте цикл с confirm, который продолжается по Отмена и заканчивается по ОК.
 
-// while (!confirm()) {
-//     confirm();
+// while (!confirm('press Ok')) {
 // }
 
 // Создайте пустой массив и добавляйте в него элементы, введенные пользователем, пока пользователь не нажмет Отмена в очередном prompt.
@@ -20,23 +19,24 @@
 
 // let arr = [];
 // let text;
-// while (text !== null){
+//  do{
 //   text = prompt("Привіт");
-//   arr.push(text);
-// };
+//     arr[arr.length]= text;
+// }while (text !== null)
 // arr.pop();
 // console.log(arr);
 
 // Создайте бесконечный цикл, который прерывается с помощью конструкции break, когда Math.random() > 0.9.
 // Код должен подсчитывать количество итераций и вывести это число с помощью alert.
 
+// let repeated = 0;
 // for (let i = 1; ; i++) {
-//     Math.random();
-//   if (Math.random() > 0.9) {
+//     repeated++;
+//     if (Math.random() > 0.9) {
 //     break;
 //     }
-//     console.log(i);
 // }
+// alert(`this circle repeated ${repeated-1} times`);
 
 // Сделайте цикл с prompt, который прерывается по нажатию OK и продолжается по нажатию "Отмена" c пустым телом цикла.
 
@@ -47,20 +47,17 @@
 // Подсчитать сумму арифметической прогрессии от 1 до N c шагом 3(1, 4, 7....) используя цикл for.
 // Метод Гаусса не применять, наоборот, сделать максимально наивное решение.
 
-// let arr = [];
-// let sum;
-// for (let i = 1; i <= 1012; i += 3) {
-//   i += 0;
-//   arr.push(i);
-//   sum = arr.reduce((accum, curent) => accum + curent, 0);
+// let count = 0;
+// for (i = 1; i <= 10; i += 3) {
+//     count += i;
 // }
-// console.log(sum);
+// console.log(count);
 
 // Сформировать строку " # # # # # " с помощью цикла for. Длина строки может быть четной и нечетной, и указывается в одном месте в коде.
 
 // let str = '';
 // for (i = 0; i < 5; i++){
-//   str += '#';
+//   str += '# ';
 // }
 // console.log(str);
 
@@ -79,30 +76,33 @@
 
 // Сформируйте строку с шахматной доской из вложенных циклов. Для перевода строки используйте \n. Код должен поддерживать легкое изменение размеров доски.
 
-// let str = ".";
-// let substr = "";
-// for (i = 0; i < 5; i++) {
-//   for (j = 0; j < 6; j++) {
-//     substr +='#'+ str;
+// var str = " x";
+// var str2 = " o";
+// var result = "";
+// var row = true;
+// for (var i = 0; i < 5; i++) {
+//   for (var j = 0; j < 5; j++) {
+//     if ((j + row) % 2 == 0) {
+//       result += str2;
+//     } else {
+//       result += str;
+//     }
 //   }
-//   substr += "\n";
-//   for (j = 0; j < 6; j++) {
-//     substr += str + '#';
-//   }
-//   substr += "\n";
+//   console.log(result);
+//   result = "";
+//   row = !row;
 // }
-// console.log(substr);
 
 // Сформируйте массив из N элементов, содержащий в себе кубы индексов, т. е:
 
-// const arr = [];
-// for (i = 0; i <= 7; ++i) {
-//   arr[i] **= 3;
-//   arr.push(i);
+// function power(n) {
+//     const arr = [];
+// for (i = 0; i < n; i++){
+//     arr[arr.length] = i ** 3;
 // }
-// arr.shift();
-// arr.pop();
-// console.log(arr);
+//     console.log(arr)
+// }
+// power(5);
 
 // C помощью вложенного цикла сформируйте массив массивов "таблица умножения".
 // Для инициализации вложенных массивов используйте
@@ -164,4 +164,3 @@
 // span.innerText = 'salut';
 // document.body.prepend(span)
 // console.log(span.children) //пара дочерних элементов - i и strong
-
