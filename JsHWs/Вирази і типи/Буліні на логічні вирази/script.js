@@ -1,3 +1,4 @@
+
 'Number: odd'
 // С помощью prompt узнайте число, введенное пользователем.С помощью if проверьте что число корректно преобразовано из строки.
 // В случае ошибки выведите сообщение Выведите четное число или нет, используя if.
@@ -185,7 +186,6 @@
 // Следующий alert выводит имя победителя или "ничья"
 
 // const words = ["rock", "scissors", "paper"];
-
 // const p1 = prompt('Player1, your choice');
 // const p2 = words[Math.floor(Math.random() * words.length)];
 // const result = alert(p2)
