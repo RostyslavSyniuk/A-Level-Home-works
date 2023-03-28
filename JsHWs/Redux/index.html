@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="kola">
+      <p class="amount-kola">100</p>
+      <p>Kola🥤</p>
+      <p class="price">1$</p>
+      <input id="amount-in-kola" type="number">
+      <button form="amount-in-kola">GiveMeYourMoney</button>
+    </div>
+    <div class="water">
+      <p class="amount-water">100</p>
+      <p>Water🥛</p>
+      <p class="price">5$</p>
+      <input id="amount-in-water" type="number">
+      <button form="amount-in-water">GiveMeYourMoney</button>
+    </div>
+    <div class="milk">
+      <p class="amount-milk">100</p>
+      <p>Milk🍼</p>
+      <p class="price">3$</p>
+      <input id="amount-in-milk" type="number">
+      <button form="amount-in-milk">GiveMeYourMoney</button>
+    </div>
+    <script src="script.js"></script>
+    <style>
+      body {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 50vh;
+      }
+      div {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 24px;
+        font-style: oblique;
+        margin: 0 150px;
+        background-color: rgb(255, 140, 8);
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 2px 5px 2px black;
+        border-radius: 25px;
+      }
+      .kola {
+        color: firebrick;
+      }
+      .water {
+        color: aqua;
+      }
+      .milk {
+        color: beige;
+      }
+      input{
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: green;
+        height: 25px;
+        border-radius: 10px;
+      }
+      button{
+        background-color: transparent;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 1s;
+        margin: 15px 0;
+      }
+      button:hover{
+        font-size: 18px;
+        color: aquamarine;
+        border: 1px solid rgb(18, 107, 240);
+        border-radius: 25px;
+        
+      }
+      .price{
+        color: rgb(45, 115, 243);
+      }
+    </style>
+  </body>
+</html>

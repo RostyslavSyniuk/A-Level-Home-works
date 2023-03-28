@@ -7,8 +7,8 @@
 // String: greeting
 // Спросите у пользователя имя, и поприветствуйте его с помощью alert.
 
-// let saHello = prompt('what is your name?')
-// alert("Hello, " + `${saHello}. ` + "I want you to be my friend!!! =)");
+// let sayHello = prompt('what is your name?')
+// alert("Hello, " + `${sayHello}. ` + "I want you to be my friend!!! =)");
 
 // String: capitalize
 // Преобразуйте строку, введенную пользователем, таким образом, что бы первая буква становилась большой, а остальные - маленькими.
@@ -37,12 +37,12 @@
 // console.log(fullName);
 
 // String: beer
-// Не используя .replace замените слово пиво в строке на слово чай
+// Не використовуючи .replace замініть слово пиво в рядку на слово чай
 
-// let str = "Было жарко. Василий пил пиво вприкуску с креветками";
-// let result = str.split(' ');
-// result.splice(4, 1, 'чай');
-// console.log(result.join(' '));
+// let str = "Було жарко. Василь пив пиво вприкуску з креветками";
+// let result = str.split(" ");
+// result.splice(4, 1, "чай");
+// console.log(result.join(" "));
 
 // String: no tag
 // Найдите в строке HTML тэг.Удалите, т.е.вырежьте его - создайте другую строку, в которой будет все символы до тэга и после него
@@ -66,8 +66,8 @@
 // Дадим пользователю такую возможность - Пользователь может вводить \n в качестве маркера новой строки.
 // Используя split и join сделайте эту строку воистину многострочной и выведите в консоль или через alert.
 
-// let str = prompt("Write anything text(Double space is break to a new line):");
-// console.log(str.split("  ").join("\n"));
+// let str = prompt("Write any text( '\\n' is break to a new line):");
+// console.log(str.split("\\n").join("\n"));
 
 // String: youtube
 // Пусть пользователь введет любой текст с ссылкой на youtube. Используя регулярное выражение извлеките из ссылки идентификатор видоса и создайте строку с встраиваемым блоком HTML. Добавьте блок на страницу.
@@ -79,8 +79,8 @@
 // используя document.write отправьте полученную строку на страницу.
 
 // const reg = /www\.youtube\.com\/watch\?v\=((-|_)*(\w+(-|_)*\w+))/;
-// const str = "https://www.youtube.com/watch?v=TImUkcAha0Y";
+// const str = "https://www.youtube.com/watch?v=sU4S1kd12bw";
 // const found = str.match(reg);
-// document.write(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${found[1]}"\n
-// title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;\n
+// document.write(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${found[1]}"
+// title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
 // gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);

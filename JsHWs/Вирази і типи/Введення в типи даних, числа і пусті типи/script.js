@@ -69,3 +69,19 @@
 //       console.log(Math.ceil(porch), Math.ceil(floor));
 // }
 // searchFlat(768);
+
+// Number: flats
+// Сделайте калькулятор, который позволит вам исходя из информации о количества этажей в доме и количества квартир на этаже находить подъезд и этаж определенной квартиры по её номеру.
+// Например для 9этажного дома по 4 квартиры на этаж 81 квартира находится на 3м этаже третьего подъезда.
+
+// function getFlat(flatNum) {
+//     let floor = Math.ceil((flatNum  / 4) % 9);
+//     const porch = Math.ceil((flatNum / 36) % 36);
+//     if (flatNum <= 0) {
+//         return console.log('enter correct flat number, please');
+//     }
+//     floor == 0 ? floor += 9 : floor;
+//     const result = `Your flat is on ${floor} floor of ${porch} porch`;
+//     return console.log(result);
+// }
+// getFlat(1248);
